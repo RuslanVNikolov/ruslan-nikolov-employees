@@ -4,32 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7bd77a37-e407-43d5-8ae4-16c25636af92" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/csv-plugin.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/application/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/application/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/application/controller/CsvUploadController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/application/model/Colleagues.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/application/model/Job.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/application/model/PartnershipId.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/application/service/EmployeeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/application/util/CsvReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/jobs.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ruslan-nikolov-employees-frontend/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ruslan-nikolov-employees-frontend/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ruslan-nikolov-employees-frontend/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ruslan-nikolov-employees-frontend/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ruslan-nikolov-employees-frontend/.idea/ruslan-nikolov-employees-frontend.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ruslan-nikolov-employees-frontend/.idea/vcs.xml" afterDir="false" />
-    </list>
+    <list default="true" id="7bd77a37-e407-43d5-8ae4-16c25636af92" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
