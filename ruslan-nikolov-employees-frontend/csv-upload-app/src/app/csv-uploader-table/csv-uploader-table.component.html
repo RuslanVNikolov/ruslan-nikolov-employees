@@ -1,0 +1,33 @@
+<div style="margin: 20px">
+  <h2>CSV File Uploader</h2>
+  <input type="file" (change)="onFileSelected($event)" accept=".csv">
+  <button (click)="onUpload()" [disabled]="!selectedFile">Upload CSV</button>
+</div>
+
+<div *ngIf="colleague">
+  <h2>Colleagues Data</h2>
+  <table border="1" cellpadding="4" cellspacing="0">
+    <thead>
+    <tr>
+      <th>First Employee</th>
+      <th>Second Employee</th>
+      <th>Project ID</th>
+      <th>Days Worked</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let row of tableRows">
+      <ng-container *ngIf="!row.isTotal; else totalRow">
+        <td>{{ row.firstEmployee }}</td>
+        <td>{{ row.secondEmployee }}</td>
+        <td>{{ row.projectId }}</td>
+        <td>{{ row.daysWorked }}</td>
+      </ng-container>
+      <ng-template #totalRow>
+        <td colspan="3" style="text-align:right"><strong>Total</strong></td>
+        <td>{{ row.daysWorked }}</td>
+      </ng-template>
+    </tr>
+    </tbody>
+  </table>
+</div>

@@ -4,7 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7bd77a37-e407-43d5-8ae4-16c25636af92" name="Changes" comment="" />
+    <list default="true" id="7bd77a37-e407-43d5-8ae4-16c25636af92" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/controller/CsvUploadController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/controller/CsvUploadController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/model/Colleagues.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/model/Colleagues.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/model/PartnershipId.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/model/PartnershipId.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/service/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/service/EmployeeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/util/CsvReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/util/CsvReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/jobs.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/jobs.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application/controller/CsvUploadController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application/controller/CsvUploadController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application/model/Colleagues$ColleaguesBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application/model/Colleagues$ColleaguesBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application/model/Colleagues.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application/model/Colleagues.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application/model/PartnershipId$PartnershipIdBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application/model/PartnershipId$PartnershipIdBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application/model/PartnershipId.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application/model/PartnershipId.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application/service/EmployeeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application/service/EmployeeService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application/util/CsvReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application/util/CsvReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jobs.csv" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jobs.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ruslan-nikolov-employees-frontend/csv-upload-app/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../ruslan-nikolov-employees-frontend/csv-upload-app/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ruslan-nikolov-employees-frontend/csv-upload-app/src/app/csv-uploader/csv-uploader.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ruslan-nikolov-employees-frontend/csv-upload-app/src/app/csv-uploader/csv-uploader.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ruslan-nikolov-employees-frontend/csv-upload-app/src/app/csv-uploader/csv-uploader.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ruslan-nikolov-employees-frontend/csv-upload-app/src/app/csv-uploader/csv-uploader.component.ts" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,6 +35,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="2v2bU6c5nGHFVF266IIp604tSJF" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -156,5 +187,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/application/service/EmployeeService.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

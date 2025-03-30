@@ -29,12 +29,13 @@ public class EmployeeService {
                         Interval job2Interval = new Interval(job2.getDateFrom(), job2.getDateTo());
                         Interval overlap = job1Interval.overlap(job2Interval);
                         if (overlap != null) {
-                            PartnershipId pid = new PartnershipId(new HashSet<>(Arrays.asList(job1.getEmployeeId(), job2.getEmployeeId())));
-                            Colleagues colleagues = colleaguesMap.getOrDefault(pid.getId(), new Colleagues(pid, new HashMap<>()));
-
+                            PartnershipId pid = new PartnershipId(job1.getEmployeeId(), job2.getEmployeeId());
+                            Colleagues colleagues = colleaguesMap.getOrDefault(pid.getId(), new Colleagues(job1.getEmployeeId(), job2.getEmployeeId(), new HashMap<>(), 0));
                             int currentDays = colleagues.getProjects().getOrDefault(job1.getProjectId(), 0);
+
                             currentDays += overlap.toDuration().getStandardDays();
                             colleagues.getProjects().put(job1.getProjectId(), currentDays);
+                            colleagues.setTotalDaysTogether(colleagues.getProjects().values().stream().mapToInt(Integer::intValue).sum());
                             colleaguesMap.put(pid.getId(), colleagues);
                         }
                     }

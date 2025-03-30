@@ -2,6 +2,8 @@ package application.util;
 
 import application.model.Job;
 import org.joda.time.DateTime;
+import org.joda.time.format.DateTimeFormat;
+import org.joda.time.format.DateTimeFormatter;
 import org.springframework.stereotype.Component;
 
 import java.io.BufferedReader;
@@ -39,8 +41,8 @@ public class CsvReader {
                 String dateFromStr = tokens[2].trim();
                 String dateToStr = tokens[3].trim();
 
-                DateTime dateFrom = DateTime.parse(dateFromStr);
-                DateTime dateTo = "NULL".equalsIgnoreCase(dateToStr) ? DateTime.now() : DateTime.parse(dateToStr);
+                DateTime dateFrom = parseDate(dateFromStr);
+                DateTime dateTo = parseDate(dateToStr);
 
                 Job job = new Job(employeeId, projectId, dateFrom, dateTo);
                 jobs.add(job);
@@ -74,14 +76,38 @@ public class CsvReader {
                 String dateFromStr = tokens[2].trim();
                 String dateToStr = tokens[3].trim();
 
-                DateTime dateFrom = DateTime.parse(dateFromStr);
-                DateTime dateTo = "NULL".equalsIgnoreCase(dateToStr) ? DateTime.now() : DateTime.parse(dateToStr);
+                DateTime dateFrom = parseDate(dateFromStr);
+                DateTime dateTo = parseDate(dateToStr);
 
                 Job job = new Job(employeeId, projectId, dateFrom, dateTo);
                 jobs.add(job);
             }
         }
         return jobs;
+    }
+
+    private DateTime parseDate(String dateStr) {
+        if ("NULL".equalsIgnoreCase(dateStr)) {
+            return DateTime.now();
+        }
+        String[] dateFormats = {
+                "yyyy-MM-dd",
+                "MM/dd/yyyy",
+                "dd-MM-yyyy",
+                "dd/MM/yyyy",
+                "yyyy/MM/dd",
+                "MM-dd-yyyy",
+                "dd.MM.yyyy"
+        };
+
+        for (String format : dateFormats) {
+            try {
+                DateTimeFormatter formatter = DateTimeFormat.forPattern(format);
+                return formatter.parseDateTime(dateStr);
+            } catch (IllegalArgumentException ignored) {
+            }
+        }
+        throw new IllegalArgumentException("Unable to parse date: " + dateStr);
     }
 
 }

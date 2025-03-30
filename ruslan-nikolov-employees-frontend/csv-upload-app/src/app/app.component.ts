@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { CsvUploaderComponent } from './csv-uploader/csv-uploader.component';
+import { CsvUploaderTableComponent } from './csv-uploader-table/csv-uploader-table.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CsvUploaderComponent],
-  template: `<app-csv-uploader></app-csv-uploader>`
+  imports: [CsvUploaderTableComponent],
+  template: `<app-csv-uploader-table></app-csv-uploader-table>`
 })
-export class AppComponent { }
+export class AppComponent {}

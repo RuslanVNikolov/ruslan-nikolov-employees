@@ -13,10 +13,8 @@ import java.util.Map;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Colleagues {
-    private PartnershipId id;
+    private String firstEmployeeId;
+    private String secondEmployeeId;
     private Map<String, Integer> projects = new HashMap<>();
-
-    public Integer getTotalDaysTogether() {
-       return projects.values().stream().mapToInt(Integer::intValue).sum();
-    }
+    private Integer totalDaysTogether;
 }

@@ -17,7 +17,7 @@ public class Main {
         System.out.println("The jobs parsed:");
         jobs.forEach(System.out::println);
         Colleagues colleagues = service.getBestEmployeePair(jobs);
-        System.out.printf("Best employee pair: %s%n", colleagues.getId());
+        System.out.printf("Best employee pair: %s + %s%n", colleagues.getFirstEmployeeId(), colleagues.getSecondEmployeeId());
         colleagues.getProjects().forEach((project, days) -> System.out.printf("Project %s days together %s%n", project, days));
         System.out.printf("Total days together: %s", colleagues.getTotalDaysTogether());
     }
